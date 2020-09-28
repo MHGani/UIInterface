@@ -11,12 +11,12 @@ public class SecondActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.second_activity);
 
-        TextView textView=(TextView) findViewById(R.id.txt_bundle);
+        TextView textView=(TextView) findViewById(R.id.textView);
         Bundle bundle=getIntent().getExtras();
         String data=bundle.get("data").toString();
         textView.setText(data);
 
-        TextView textView2=(TextView) findViewById(R.id.txt_bundle);
+        TextView textView2=(TextView) findViewById(R.id.textView2);
         Bundle bundle2=getIntent().getExtras();
         String data2=bundle.get("data").toString();
         textView.setText(data2);
