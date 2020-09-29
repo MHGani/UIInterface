@@ -22,6 +22,7 @@ import com.example.uiinterface.database.AppDatabase;
 import com.example.uiinterface.entities.Person;
 import com.example.uiinterface.utility.AppExecutors;
 import com.example.uiinterface.views.ListPerson;
+import com.example.uiinterface.views.rvPerson;
 import com.google.android.material.textfield.TextInputEditText;
 
 import java.util.ArrayList;
@@ -139,7 +140,7 @@ public class MainActivity extends Activity implements AdapterView.OnItemSelected
     }
 
     public void nextScreenOnDataSuccess(){
-        Intent intent= new Intent(MainActivity.this, ListPerson.class);
+        Intent intent= new Intent(MainActivity.this, rvPerson.class);
         startActivity(intent);
     }
 
